@@ -29,11 +29,11 @@
 
             <label for="nome">Nome na Terra Média:</label><!--input/label simples de texto-->
             <input type="text" name="nome" 
-            id="nome" placeholder="Ex: Aragorn"><br><br>
+            id="nome" placeholder="Ex: Aragorn" required><br><br>
 
             <label for="email">Corvo eletrônico(Email):</label><!--input/label simples de email(onde nao aceita emails invalidos)-->
             <input type="email" name="email" 
-            id="email"><br><br>
+            id="email" required><br><br>
 
             <label for="ano">Ano De Nascimento:</label><!--input/label simples de numero(com limites de 1900 a 2026)-->
             <input type="number" name="ano" 
@@ -56,8 +56,8 @@
 
             </fieldset><br><br>
 
-        <label for="opcoes">Escolha seu filme favorito:</label><!--input/label de seleção (select)-->
-        <select name="opcoes" id="opcoes">
+        <label for="filme_favorito">Escolha seu filme favorito:</label><!--input/label de seleção (select)-->
+        <select name="filme_favorito" id="filme_favorito">
             <option value="a_sociedade_do_anel">A Sociedade do Anel</option>
             <option value="as_duas_torres">As Duas Torres</option>
             <option selected value="o_retorno_do_rei">O Retorno do Rei</option><br><br>
