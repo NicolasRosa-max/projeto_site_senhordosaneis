@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Base do site-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,22 +25,22 @@
         </div>
         <h2 class="titulo_secundario">Contato da Terra Média</h2>
         <p>Envie sua mensagem diretamente para o conselho de Elrond</p>
-        <form action="processa.php" method="get" autocomplete="off">
+        <form action="processa.php" method="get" autocomplete="off"><!--envio de dados-->
 
-            <label for="nome">Nome na Terra Média:</label>
+            <label for="nome">Nome na Terra Média:</label><!--input/label simples de texto-->
             <input type="text" name="nome" 
             id="nome" placeholder="Ex: Aragorn"><br><br>
 
-            <label for="email">Corvo eletrônico(Email):</label>
+            <label for="email">Corvo eletrônico(Email):</label><!--input/label simples de email(onde nao aceita emails invalidos)-->
             <input type="email" name="email" 
             id="email"><br><br>
 
-            <label for="ano">Ano De Nascimento:</label>
+            <label for="ano">Ano De Nascimento:</label><!--input/label simples de numero(com limites de 1900 a 2026)-->
             <input type="number" name="ano" 
             id="ano" min="1900" max="2026"><br><br>
 
-            <fieldset>
-                <legend>Qual é sua raça?</legend>
+            <fieldset><!--fieldset e oque cria um container para agrupar elementos -->
+                <legend>Qual é sua raça?</legend><!--input/label de opções (radio buttons) onde so permite o usuario escolher apenas uma-->
                 <label for="humano">
                     <input type="radio" name="raca" value="humano" id="humano"> Humano
                 </label>
@@ -56,7 +56,7 @@
 
             </fieldset><br><br>
 
-        <label for="opcoes">Escolha seu filme favorito:</label>
+        <label for="opcoes">Escolha seu filme favorito:</label><!--input/label de seleção (select)-->
         <select name="opcoes" id="opcoes">
             <option value="a_sociedade_do_anel">A Sociedade do Anel</option>
             <option value="as_duas_torres">As Duas Torres</option>
@@ -64,7 +64,7 @@
         </select><br><br>
 
 
-        <label for="local">Escolha um local da Terra Média:</label>
+        <label for="local">Escolha um local da Terra Média:</label><!--input/label de seleção com grupos (optgroup)-->
         <select name="local" id="local">
             <optgroup label="Reino dos homens">
                 <option value="gondor">Gondor</option>
@@ -81,40 +81,40 @@
         </select><br><br>
 
         <fieldset>
-            <legend>Suas habilidades:</legend>
+            <legend>Suas habilidades:</legend><!--input/label de opções múltiplas (checkbox) onde o usuario pode escolher mais de uma opção-->
             <label><input type="checkbox" name="espada" value="espada">Espada</label>
             <label><input type="checkbox" name="arco_e_flecha" value="arco_e_flecha">Arco e Flecha</label>
             <label><input type="checkbox" name="magia" value="magia">Magia</label>
             <label><input type="checkbox" name="furtividade_hobbit" value="furtividade_hobbit">Furtividade Hobbit</label>
         </fieldset><br><br>
 
-        <label for="nivel">Nivel de coragem(1 a 10)</label>
+        <label for="nivel">Nivel de coragem(1 a 10)</label><!--input/label de slider (range) e eu coloquei de 0 a 9 pois no site o max é 10-->
         <input type="range" name="nivel" id="nivel" min="0" max="9"><br><br>
 
-        <label for="reino">Escolha seu reino de origem:</label>
-        <input type=text id=busca_datalist list="reinos">
-        <datalist id=reinos>
+        <label for="reino">Escolha seu reino de origem:</label><!--input/label de datalist onde da opções de seleção -->
+        <input type="text" id="busca_datalist" list="reinos">
+        <datalist id="reinos">
             <option>Gondor</option>
             <option>Rohan</option>
             <option>Mordor</option>
             <option>Condado</option>
         </datalist><br><br>
 
-        <label for="cor">Cor do seu manto:</label>
+        <label for="cor">Cor do seu manto:</label><!--input/label de seleção de cor (color) onde o usuario pode escolher uma cor-->
         <input type="color" id="cor" name="cor"><br><br>
                 
-        <label for="data">Data da sua jornada:</label>
+        <label for="data">Data da sua jornada:</label><!--input/label de seleção de data (date) onde o usuario pode escolher uma data-->
         <input type="date" id="data" name="data"><br><br>
 
-        <label for="arquivo">Anexe uma relíquia:</label>
+        <label for="arquivo">Anexe uma relíquia:</label><!--input/label de seleção de arquivo (file) onde o usuario pode anexar um arquivo-->
         <input type="file" name="arquivos"
         id="arquivo" placeholder="Anexe uma relíquia"><br><br>    
 
-        <label for="descricao">Mensagem ao Conselho:</label><br>
+        <label for="descricao">Mensagem ao Conselho:</label><br><!--input/label de área de texto (textarea) onde o usuario pode escrever uma mensagem mais longa-->
         <textarea cols="30" rows="5" name="descricao" id="descricao"></textarea><br><br>
 
-            <button type="reset">Apagar Pergaminho</button>
-            <button type="submit">Enviar para Valfenda</button>
+            <button type="reset">Apagar Pergaminho</button><!--botão de reset para limpar o formulário-->
+            <button type="submit">Enviar para Valfenda</button><!--botão de submit para enviar o formulário-->
         </form>
     
 </body>
