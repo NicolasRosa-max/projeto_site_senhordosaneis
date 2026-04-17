@@ -8,10 +8,30 @@
      background-color:#2F4F2F; ;
     color: white;
 }
-
-#layout{
-    display: flex;
-}
 .rodape{
     text-align: center;
+}
+
+body{
+    /*topografia css*/
+    background-color: rgb(0,0,0);/*cor de fundo*/
+    color: rgb(255,255,255);/*cor da fonte*/
+    font-family:  "Roboto", sans-serif;/*fonte do texto*/
+    font-size:16px;/*tamanho da fonte*/
+}
+#layout{
+    font-size: 1em;/*herda o tamanho do pai dele com um multiplicador*/
+    display: flex;
+    font-style: italic;/*estilo da fonte:italic, normal, oblique*/
+    line-height: 30px;/*espacamento de entre linhas*/
+    font-weight: bolder;/*negrito em css 100 a 900 bold and bolder*/
+    text-transform: none;/*capitaizaçao do texto; uppercase, loweercase, capitalize*/
+    text-decoration:none;/*sublinhado de texto; overline ou underline:double dashed dotted wavy none*/
+    word-spacing: 10px;/*espacamento entre palavras*/
+    letter-spacing: none;/*espacamento entre letras*/
+    text-indent: 20px;/*espacamento do paragravo primeira linha*/
+    text-align: center;/*alinhamento do texto*/
+}
+nav a{
+    text-decoration: none;
 }
