@@ -30,8 +30,37 @@ body{
     word-spacing: 10px;/*espacamento entre palavras*/
     letter-spacing: none;/*espacamento entre letras*/
     text-indent: 20px;/*espacamento do paragravo primeira linha*/
-    text-align: center;/*alinhamento do texto*/
+    text-align: justify;/*alinhamento do texto*/
+
+    /*border-style: dashed;/*cria uma borda em volta do layout*/
+    /*border-width: 1em;/*espessura da borda*/
+    /*border-color:rgb(243 45 216);/*cor da borda*/
+    border:dashed 5px rgb(243, 45, 216); /*tudo sobre a bordas*/
+    border-top:dashed 10px rgb(243, 45, 216); /*tudo sobre a bordas*/
+    border-left: dotted 15px rgb(218, 231, 43);
+    border-right: dotted 20px rgb(218, 231, 43);
+    border-bottom: dotted 25Wpx rgb(218, 231, 43);
+    border-radius: 100px 50px;/*raio da borda*/
+
+    margin: 20px;/*margem do lado de fora da borda*/
+    margin-top: 20px;/*margem do lado de fora da borda*/
+    margin-bottom: 20px;/*margem do lado de fora da borda*/
+    margin-left: 20px;/*margem do lado de fora da borda*/
+    margin-right: 20px;/*margem do lado de fora da borda*/
+    
+    padding: 20px;/*margem de dentro da borda*/
+    padding-top: 20px;/*margem de dentro da borda*/
+    padding-bottom: 20px;/*margem de dentro da borda*/
+    padding-left: 20px;/*margem de dentro da borda*/
+    padding-right: 20px;/*margem de dentro da borda*/
+    
 }
 nav a{
     text-decoration: none;
+}
+.teste_display{
+    background-color: orange;
+    display: inline-block;
+    width: 500px;
+    height: 150;
 }
